@@ -4,13 +4,15 @@
 
 .header {
   height: 100vh;
-  background: url("../images/bg-1.jpeg") center center / cover no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6)),
+    url("../images/bg-1.jpeg") center center / cover no-repeat;
   position: relative;
 }
 
 .header__navbar {
   position: fixed;
   top: 0;
+  z-index: 5000;
   width: 100%;
   height: 7rem;
   display: flex;
@@ -30,14 +32,32 @@
   gap: 5px;
 }
 
-.header__navbar__link {
+.header__navbar__link:link,
+.header__navbar__link:visited {
   color: var(--white-color, #fff);
   padding: 1rem 2rem;
 }
 
+.header__navbar__link:hover,
+.header__navbar__link:active {
+  border-bottom: 2px solid var(--warning-color, #ffc107);
+}
+
 .header__content {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  color: var(--white-color, #fff);
+}
+
+.header__content__title {
+  font-size: 5.5rem;
+}
+
+.header__content__description {
+  font-size: 2.3rem;
+  max-width: 60rem;
+  margin: 2rem auto 3rem;
 }
