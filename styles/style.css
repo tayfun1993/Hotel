@@ -1,0 +1,43 @@
+/* ----------------------- */
+/* HEADERS */
+/* ----------------------- */
+
+.header {
+  height: 100vh;
+  background: url("../images/bg-1.jpeg") center center / cover no-repeat;
+  position: relative;
+}
+
+.header__navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white-color, #fff);
+  opacity: 0.8;
+  padding: 0 3rem;
+}
+
+.header__navbar__brand {
+  font-size: 3rem;
+}
+
+.header__navbar__list {
+  display: flex;
+  gap: 5px;
+}
+
+.header__navbar__link {
+  color: var(--white-color, #fff);
+  padding: 1rem 2rem;
+}
+
+.header__content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
