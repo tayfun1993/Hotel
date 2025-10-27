@@ -45,3 +45,54 @@ h2 {
 .text-center {
   text-align: center;
 }
+
+/* ------------- */
+/* buttons */
+/* ------------- */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+.btn-primary {
+  color: var(--white-color, #fff);
+  background-color: var(--primary-color, #007bff);
+}
+.btn-secondary {
+  color: var(--white-color, #fff);
+  background-color: var(--secondary-color, #6c757d);
+}
+.btn-success {
+  color: var(--white-color, #fff);
+  background-color: var(--success-color, #28a745);
+}
+.btn-danger {
+  color: var(--white-color, #fff);
+  background-color: var(--danger-color, #dc3545);
+}
+.btn-warning {
+  color: var(--white-color, #fff);
+  background-color: var(--warning-color, #ffc107);
+}
+.btn-dark {
+  color: var(--white-color, #fff);
+  background-color: var(--dark-color, #343a40);
+}
+.btn-outline-primary {
+  background: transparent;
+  border: 1px solid var(--primary-color, #007bff);
+  color: var(--dark-color, #343a40);
+}
+.btn-outline-primary:hover {
+  background: var(--primary-color, #007bff);
+  border: none;
+  color: var(--white-color, #fff);
+}
