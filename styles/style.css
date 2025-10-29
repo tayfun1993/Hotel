@@ -19,13 +19,16 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  color: var(--white-color, #fff);
   opacity: 0.8;
   padding: 0 3rem;
 }
 
 .header__navbar__brand {
   font-size: 3rem;
+
+  a {
+    color: var(--white-color, #fff);
+  }
 }
 
 .header__navbar__list {
@@ -341,13 +344,24 @@
 /* BLOG SECTION */
 /* ----------------------- */
 
+.header.blog {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6)),
+    url("../images/bg-2.jpeg") center center / cover no-repeat;
+  height: 60vh;
+}
+
+.articles {
+  padding: 3rem 5rem;
+}
+
 .article {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 .article__img-box {
-  flex: auto;
+  flex: 2;
 }
 
 .article__img {
@@ -357,7 +371,7 @@
 }
 
 .article__content {
-  flex: auto;
+  flex: 3;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
