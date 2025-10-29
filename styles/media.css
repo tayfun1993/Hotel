@@ -1,0 +1,45 @@
+@media screen and (max-width: 48em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header__navbar {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .header__navbar__link:link,
+  .header__navbar__link:visited {
+    padding: 1rem;
+  }
+
+  .services,
+  .cards,
+  .employees,
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact__img-box {
+    /* flex-basis: 50%; */
+    padding-bottom: 58%;
+  }
+
+  .employee__img {
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .gallery__images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+    figure {
+      flex: 50%;
+      padding: 4px;
+      overflow: hidden;
+    }
+  }
+}
