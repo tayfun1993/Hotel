@@ -14,10 +14,11 @@
   top: 0;
   z-index: 5000;
   width: 100%;
-  height: 7rem;
+  min-height: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
   color: var(--white-color, #fff);
   opacity: 0.8;
   padding: 0 3rem;
@@ -29,7 +30,7 @@
 
 .header__navbar__list {
   display: flex;
-  gap: 5px;
+  gap: 0.5rem;
 }
 
 .header__navbar__link:link,
