@@ -105,17 +105,22 @@
   flex-wrap: wrap;
 }
 
+.row-rewerse {
+  flex-direction: row-reverse;
+}
+
 .about__img-box {
-  flex: 1;
+  flex: auto;
 }
 
 .about__img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .about__content {
-  flex: 1;
+  flex: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -136,7 +141,7 @@
   padding: 2rem 2rem 4rem;
 }
 
-.gallery__heaader {
+.gallery__header {
   padding: 3rem;
 }
 
@@ -155,6 +160,7 @@
 .gallery__image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   cursor: pointer;
 }
 
@@ -165,3 +171,43 @@
 /* ----------------------- */
 /* ROOM SECTION */
 /* ----------------------- */
+
+.rooms {
+  padding: 2rem 2rem 4rem;
+}
+
+.rooms__header {
+  padding: 3rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+
+  figure {
+    padding: 2rem;
+    flex-basis: 100%;
+  }
+}
+
+.card__content {
+  font-weight: 700;
+  color: var(--white-color, #fff);
+  padding: 2rem;
+}
+
+.card__img-box {
+  padding-bottom: 58%;
+  position: relative;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}

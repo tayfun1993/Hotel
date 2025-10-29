@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
+  <body class="bg-light">
     <header id="home" class="header">
       <div class="header__navbar bg-dark">
         <div class="header__navbar__brand">
@@ -50,7 +50,7 @@
     </header>
 
     <main>
-      <section id="services" class="services bg-light">
+      <section id="services" class="services">
         <div>
           <div class="services__icon-box bg-primary">
             <i class="fa-solid fa-bell-concierge"></i>
@@ -116,7 +116,7 @@
       </section>
 
       <section id="gallery" class="gallery">
-        <div class="gallery__heaader text-center">
+        <div class="gallery__header text-center">
           <h2 class="heading-secondary gallery__heaader__title">
             Lorem ipsum.
           </h2>
@@ -186,7 +186,15 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about row-rewerse">
+        <div class="about__img-box">
+          <img
+            src="images/abouts/about-2.jpeg"
+            alt="about"
+            class="about__img"
+          />
+        </div>
+
         <div class="about__content bg-primary">
           <h2 class="heading-secondary">Customer Service</h2>
           <p class="about__description">
@@ -195,13 +203,62 @@
           </p>
           <button class="btn btn-outline">Read More</button>
         </div>
+      </section>
 
-        <div class="about__img-box">
-          <img
-            src="images/abouts/about-2.jpeg"
-            alt="about"
-            class="about__img"
-          />
+      <section id="rooms" class="rooms">
+        <div class="rooms__header text-center">
+          <h2 class="heading-secondary rooms__heaader__title">Lorem ipsum.</h2>
+          <p class="rooms__heaader__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Dignissimos, minus!
+          </p>
+        </div>
+
+        <div class="cards">
+          <figure class="card">
+            <div class="card__img-box">
+              <img
+                class="card__img"
+                src="images/rooms/room1.jpeg"
+                alt="room_image"
+              />
+            </div>
+
+            <div class="card__content btn-warning text-center">
+              <h2>Deluxe Room</h2>
+              <p>Lorem, ipsum.</p>
+            </div>
+          </figure>
+
+          <figure class="card">
+            <div class="card__img-box">
+              <img
+                class="card__img"
+                src="images/rooms/room2.jpeg"
+                alt="room_image"
+              />
+            </div>
+
+            <div class="card__content btn-warning text-center">
+              <h2>Superior Room</h2>
+              <p>Lorem, ipsum.</p>
+            </div>
+          </figure>
+
+          <figure class="card">
+            <div class="card__img-box">
+              <img
+                class="card__img"
+                src="images/rooms/room3.jpeg"
+                alt="room_image"
+              />
+            </div>
+
+            <div class="card__content btn-warning text-center">
+              <h2>Standart Room</h2>
+              <p>Lorem, ipsum.</p>
+            </div>
+          </figure>
         </div>
       </section>
     </main>
