@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="bg-light">
+  <body>
     <header id="home" class="header">
       <div class="header__navbar bg-dark">
         <div class="header__navbar__brand">
@@ -316,6 +316,49 @@
               <p>Lorem, ipsum.</p>
             </div>
           </figure>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact__img-box">
+          <img src="images/contact.jpeg" alt="contact" class="contact__img" />
+        </div>
+
+        <div class="contact__content bg-light">
+          <h2 class="heading-secondary">Contact Us</h2>
+          <form action="#" class="contact__form">
+            <div class="form-control">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="phone">Phone:</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </section>
     </main>
